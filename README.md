@@ -1,7 +1,5 @@
-# jwt-angular-node-net-core
-[JSON Web Tokens](https://jwt.io/) (JWT) example using [Angular](https://angular.io/) front-end, [ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/?view=aspnetcore-2.1) API and *ASP.NET Core* token server.
-
-*Node token server in the works*
+# signalr-char
+SignalR chat application built on .NET Core 2.1.  Uses simple typescript client.
 
 
 ## Prerequisities
@@ -12,19 +10,17 @@
 ## Get Started
 
 * Clone the repo
-* Navigate to aspnet-core-api folder, open a terminal:
+* Navigate to signalr-chat folder, open a terminal:
+  - `npm run release`
+* This command yields the client-side assets.  Now build and run the .NET app:
   - `dotnet restore`
   - `dotnet build`
   - `dotnet run`
-* Do the same with aspnet-core-token-server
-* Navigate to angular client-folder, open a terminal:
-  - `npm install`
-  - `ng serve`
-* Open browser, navigate to localhost:4200
+* Open browser, navigate to localhost:5000
+* Open another browser session and navigate to same url
+* Sending messages from one sessions will be broadcast to the any other connected browsers
 
 
 ## Resources
 
-- https://blog.angular-university.io/angular-jwt-authentication/
-- https://code-maze.com/authentication-aspnetcore-jwt-1/
-- https://code-maze.com/authentication-aspnetcore-jwt-2/
+- https://docs.microsoft.com/en-us/aspnet/core/tutorials/signalr-typescript-webpack?view=aspnetcore-2.1&tabs=netcore-cli
