@@ -1,4 +1,4 @@
-# signalr-char
+# signalr-chat
 SignalR chat application built on .NET Core 2.1.  Uses simple typescript client.
 
 
